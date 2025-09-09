@@ -1,0 +1,73 @@
+{
+	"DESIGN_NAME": "top",
+	"PDKPATH": "/home/jchirino/.volare/volare/ihp-open-pdk",
+	"PDK": "ihp-sg13g2",
+	"VERILOG_FILES": [
+		"/home/jchirino/repos/unic-cass-ihp-uart-alu/RTL/alu.v",
+		"/home/jchirino/repos/unic-cass-ihp-uart-alu/RTL/alu_uart_interface.v",
+		"/home/jchirino/repos/unic-cass-ihp-uart-alu/RTL/baud_rate.v",
+		"/home/jchirino/repos/unic-cass-ihp-uart-alu/RTL/fifo.v",
+		"/home/jchirino/repos/unic-cass-ihp-uart-alu/RTL/top.v",
+		"/home/jchirino/repos/unic-cass-ihp-uart-alu/RTL/uart_interface.v",
+		"/home/jchirino/repos/unic-cass-ihp-uart-alu/RTL/uart_rx.v",
+		"/home/jchirino/repos/unic-cass-ihp-uart-alu/RTL/uart_tx.v"            
+	],
+	"CLOCK_PERIOD": 100,
+	"CLOCK_PORT": "clk",
+	"CLOCK_NET": "clk",
+	"LEC_ENABLE": 1, 
+
+
+	"RUN_LINTER": 1,
+	"QUIT_ON_LINTER_WARNINGS": 0,
+	"QUIT_ON_LINTER_ERRORS": 1,
+
+	"SYNTH_CLOCK_UNCERTAINTY": 0.15,
+	"SYNTH_NO_FLAT": 0,
+	"SYNTH_SHARE_RESOURCES": 1,
+	"SYNTH_ADDER_TYPE": "YOSYS",
+	"BASE_SDC_FILE": "/home/jchirino/repos/unic-cass-ihp-uart-alu/constraints/uart-alu-8bit.sdc",
+	"SYNTH_FLAT_TOP": 0,
+	"SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
+	"QUIT_ON_TIMING_VIOLATIONS": 0,
+	"QUIT_ON_SETUP_VIOLATIONS": 0,
+	"QUIT_ON_HOLD_VIOLATIONS": 0,
+
+
+	"RUN_TAP_DECAP_INSERTION": 1,
+	"FP_CORE_UTIL": 60,
+	"FP_ASPECT_RATIO": 1,
+	"FP_SIZING": "relative",
+	"VDD_NETS": "vccd1",
+	"GND_NETS": "vssd1",
+	"SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
+	"FP_PIN_ORDER_CFG": [
+		"/home/jchirino/repos/unic-cass-ihp-uart-alu/constraints/pin_order.cfg"
+	],
+	"FP_PDN_CORE_RING": 0,
+	"FP_PDN_MULTILAYER": 0,
+	"RT_MAX_LAYER": "met4",
+	"FP_PDN_SKIPTRIM": 0,
+	"FP_PDN_ENABLE_RAILS": 1,
+	"REPAIR_ANTENNAS": 1,
+
+
+	"PL_TARGET_DENSITY": 0.63,
+	"PL_BASIC_PLACEMENT": 0,
+	"PL_RESIZER_BUFFER_INPUT_PORTS": 1,
+	"PL_RESIZER_DESIGN_OPTIMIZATIONS": 1,
+	"PL_RESIZER_TIMING_OPTIMIZATIONS": 1,
+	"GLB_RESIZER_DESIGN_OPTIMIZATIONS": 1,
+	"GLB_RESIZER_TIMING_OPTIMIZATIONS": 1,
+	"RUN_CTS": 1,
+	"RUN_FILL_INSERTION": 1,
+
+
+	"ROUTING_CORES": 6,
+	"GRT_ALLOW_CONGESTION": 1,
+	"DRT_OPT_ITERS": 20,
+
+	"RUN_CVC": 1,
+	"RUN_IRDROP_REPORT": 1
+ 
+}
