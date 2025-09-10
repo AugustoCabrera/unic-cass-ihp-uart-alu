@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/camila/my_designs/unic-cass/unic-cass-ihp-uart-alu/constraints/runs/RUN_2025-09-09_21-56-49/20-openroad-generatepdn/or_metrics_out.json /nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/openroad/pdn.tcl

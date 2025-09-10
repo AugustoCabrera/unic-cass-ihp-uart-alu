@@ -1,0 +1,42 @@
+Clock: clk
+Sources: 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 100.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+clk                 100.000000    0.000000 50.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock clk
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+20.352282         network latency uartUnit.uartRxUnit._155_/CLK
+        20.647699 network latency uartUnit.fifoTX._138_/CLK
+---------------
+20.352282 20.647699 latency
+        0.295417 skew
+
+rise -> fall
+    min     max
+0.000000 0.000000 source latency
+20.290148         network latency uartUnit.uartRxUnit._155_/CLK
+        20.545208 network latency uartUnit.fifoTX._138_/CLK
+---------------
+20.290148 20.545208 latency
+        0.255062 skew
+
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+clk period_min = 0.00 fmax = inf

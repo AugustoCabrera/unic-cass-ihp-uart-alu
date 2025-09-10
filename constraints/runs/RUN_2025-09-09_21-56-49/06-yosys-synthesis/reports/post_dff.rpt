@@ -1,0 +1,308 @@
+143. Printing statistics.
+
+=== $paramod$1b78d2d521b3f5ebabffb07db7e6e88fe1f0b213\alu ===
+
+   Number of wires:                320
+   Number of wire bits:            346
+   Number of public wires:           4
+   Number of public wire bits:      30
+   Number of ports:                  4
+   Number of port bits:             30
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                324
+     $_ANDNOT_                      98
+     $_AND_                          4
+     $_MUX_                         59
+     $_NAND_                        24
+     $_NOR_                         21
+     $_NOT_                         19
+     $_ORNOT_                       13
+     $_OR_                          57
+     $_XNOR_                         7
+     $_XOR_                         22
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+=== $paramod$3657eea4d53669bfdbf8ea094d48a5708f5ac2cf\alu_uart_interface ===
+
+   Number of wires:                143
+   Number of wire bits:            214
+   Number of public wires:          18
+   Number of public wire bits:      70
+   Number of ports:                 12
+   Number of port bits:             52
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                173
+     $_ANDNOT_                      25
+     $_AND_                          1
+     $_MUX_                         76
+     $_NAND_                         3
+     $_NOR_                          4
+     $_NOT_                          2
+     $_ORNOT_                        9
+     $_OR_                          15
+     sky130_fd_sc_hd__dfxtp_2       38
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '$paramod$3657eea4d53669bfdbf8ea094d48a5708f5ac2cf\alu_uart_interface': 808.275200
+     of which used for sequential elements: 808.275200 (100.00%)
+
+=== $paramod$6b4111703c44ac05de92b2879f439a7cdf507670\uart_interface ===
+
+   Number of wires:                 18
+   Number of wire bits:             46
+   Number of public wires:          18
+   Number of public wire bits:      46
+   Number of ports:                 10
+   Number of port bits:             24
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $_NOT_                          1
+     $paramod$6ec875ae98cdac0db081f5f61c4514b2beea9a0e\baud_rate      1
+     $paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_rx      1
+     $paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_tx      1
+     $paramod$a335e5d139a856f4251c37087aeb169656348c98\fifo      2
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_tx is unknown!
+   Area for cell type $paramod$6ec875ae98cdac0db081f5f61c4514b2beea9a0e\baud_rate is unknown!
+   Area for cell type $paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_rx is unknown!
+   Area for cell type $paramod$a335e5d139a856f4251c37087aeb169656348c98\fifo is unknown!
+
+=== $paramod$6ec875ae98cdac0db081f5f61c4514b2beea9a0e\baud_rate ===
+
+   Number of wires:                 34
+   Number of wire bits:             58
+   Number of public wires:           4
+   Number of public wire bits:      12
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 47
+     $_ANDNOT_                       4
+     $_AND_                          3
+     $_MUX_                          9
+     $_NAND_                         3
+     $_NOT_                          1
+     $_ORNOT_                        4
+     $_OR_                           6
+     $_XNOR_                         1
+     $_XOR_                          7
+     sky130_fd_sc_hd__dfxtp_2        9
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '$paramod$6ec875ae98cdac0db081f5f61c4514b2beea9a0e\baud_rate': 191.433600
+     of which used for sequential elements: 191.433600 (100.00%)
+
+=== $paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_rx ===
+
+   Number of wires:                142
+   Number of wire bits:            162
+   Number of public wires:          11
+   Number of public wire bits:      31
+   Number of ports:                  6
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                158
+     $_ANDNOT_                      49
+     $_AND_                          5
+     $_MUX_                         30
+     $_NAND_                         7
+     $_NOR_                          1
+     $_NOT_                          1
+     $_ORNOT_                        8
+     $_OR_                          33
+     $_XNOR_                         3
+     $_XOR_                          2
+     sky130_fd_sc_hd__dfxtp_2       19
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '$paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_rx': 404.137600
+     of which used for sequential elements: 404.137600 (100.00%)
+
+=== $paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_tx ===
+
+   Number of wires:                138
+   Number of wire bits:            172
+   Number of public wires:          15
+   Number of public wire bits:      49
+   Number of ports:                  7
+   Number of port bits:             14
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                160
+     $_ANDNOT_                      43
+     $_AND_                          4
+     $_MUX_                         38
+     $_NAND_                         9
+     $_NOR_                          2
+     $_NOT_                          1
+     $_ORNOT_                        5
+     $_OR_                          33
+     $_XNOR_                         2
+     $_XOR_                          3
+     sky130_fd_sc_hd__dfxtp_2       20
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '$paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_tx': 425.408000
+     of which used for sequential elements: 425.408000 (100.00%)
+
+=== $paramod$a335e5d139a856f4251c37087aeb169656348c98\fifo ===
+
+   Number of wires:                109
+   Number of wire bits:            156
+   Number of public wires:          18
+   Number of public wire bits:      64
+   Number of ports:                  8
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                144
+     $_ANDNOT_                      12
+     $_AND_                          1
+     $_MUX_                         75
+     $_NAND_                         1
+     $_NOT_                          5
+     $_ORNOT_                        2
+     $_OR_                           2
+     $_XNOR_                         2
+     $_XOR_                          4
+     sky130_fd_sc_hd__dfxtp_2       40
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '$paramod$a335e5d139a856f4251c37087aeb169656348c98\fifo': 850.816000
+     of which used for sequential elements: 850.816000 (100.00%)
+
+=== top ===
+
+   Number of wires:                 14
+   Number of wire bits:             54
+   Number of public wires:          14
+   Number of public wire bits:      54
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $paramod$1b78d2d521b3f5ebabffb07db7e6e88fe1f0b213\alu      1
+     $paramod$3657eea4d53669bfdbf8ea094d48a5708f5ac2cf\alu_uart_interface      1
+     $paramod$6b4111703c44ac05de92b2879f439a7cdf507670\uart_interface      1
+
+   Area for cell type $paramod$6b4111703c44ac05de92b2879f439a7cdf507670\uart_interface is unknown!
+   Area for cell type $paramod$3657eea4d53669bfdbf8ea094d48a5708f5ac2cf\alu_uart_interface is unknown!
+   Area for cell type $paramod$1b78d2d521b3f5ebabffb07db7e6e88fe1f0b213\alu is unknown!
+
+=== design hierarchy ===
+
+   top                               1
+     $paramod$1b78d2d521b3f5ebabffb07db7e6e88fe1f0b213\alu      1
+     $paramod$3657eea4d53669bfdbf8ea094d48a5708f5ac2cf\alu_uart_interface      1
+     $paramod$6b4111703c44ac05de92b2879f439a7cdf507670\uart_interface      1
+       $paramod$6ec875ae98cdac0db081f5f61c4514b2beea9a0e\baud_rate      1
+       $paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_rx      1
+       $paramod$83ab374bc08197efa514ca05ac19072747e23ee5\uart_tx      1
+       $paramod$a335e5d139a856f4251c37087aeb169656348c98\fifo      2
+
+   Number of wires:               1027
+   Number of wire bits:           1364
+   Number of public wires:         120
+   Number of public wire bits:     420
+   Number of ports:                 62
+   Number of port bits:            184
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1151
+     $_ANDNOT_                     243
+     $_AND_                         19
+     $_MUX_                        362
+     $_NAND_                        48
+     $_NOR_                         28
+     $_NOT_                         35
+     $_ORNOT_                       43
+     $_OR_                         148
+     $_XNOR_                        17
+     $_XOR_                         42
+     sky130_fd_sc_hd__dfxtp_2      166
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for top module '\top': 3530.886400
+     of which used for sequential elements: 850.816000 (24.10%)
+

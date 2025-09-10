@@ -1,0 +1,413 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+Startpoint: i_reset (input port clocked by clk)
+Endpoint: alu_uart_interfaceUnit._192_ (rising edge-triggered flip-flop)
+Path Group: unconstrained
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                 20.000000   20.000000 v input external delay
+     1    0.002797    0.004725    0.002258   20.002258 v i_reset (in)
+                                                         i_reset (net)
+                      0.004725    0.000000   20.002258 v input2/A (sky130_fd_sc_hd__clkbuf_1)
+     1    0.006120    0.030055    0.057280   20.059538 v input2/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         net2 (net)
+                      0.030055    0.000137   20.059675 v fanout41/A (sky130_fd_sc_hd__clkbuf_2)
+     6    0.028038    0.076268    0.115328   20.175003 v fanout41/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net41 (net)
+                      0.076268    0.000245   20.175249 v fanout39/A (sky130_fd_sc_hd__clkbuf_4)
+    10    0.043904    0.068385    0.151637   20.326885 v fanout39/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         net39 (net)
+                      0.068447    0.001867   20.328753 v alu_uart_interfaceUnit._096_/A (sky130_fd_sc_hd__inv_2)
+     1    0.002659    0.023537    0.038490   20.367243 ^ alu_uart_interfaceUnit._096_/Y (sky130_fd_sc_hd__inv_2)
+                                                         alu_uart_interfaceUnit._092_ (net)
+                      0.023537    0.000018   20.367260 ^ fanout37/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+     7    0.023526    0.189583    0.165183   20.532444 ^ fanout37/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+                                                         net37 (net)
+                      0.189584    0.000234   20.532679 ^ fanout36/A (sky130_fd_sc_hd__clkbuf_2)
+     7    0.024880    0.108118    0.148512   20.681190 ^ fanout36/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net36 (net)
+                      0.108118    0.000197   20.681387 ^ fanout35/A (sky130_fd_sc_hd__buf_2)
+    10    0.034299    0.128250    0.156628   20.838017 ^ fanout35/X (sky130_fd_sc_hd__buf_2)
+                                                         net35 (net)
+                      0.128250    0.000494   20.838511 ^ alu_uart_interfaceUnit._118_/A2 (sky130_fd_sc_hd__a32o_1)
+     1    0.003376    0.039185    0.104500   20.943010 ^ alu_uart_interfaceUnit._118_/X (sky130_fd_sc_hd__a32o_1)
+                                                         alu_uart_interfaceUnit._004_ (net)
+                      0.039185    0.000048   20.943058 ^ alu_uart_interfaceUnit._192_/D (sky130_fd_sc_hd__dfxtp_1)
+                                             20.943058   data arrival time
+---------------------------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 166 unclocked register/latch pins.
+  alu_uart_interfaceUnit._188_/CLK
+  alu_uart_interfaceUnit._189_/CLK
+  alu_uart_interfaceUnit._190_/CLK
+  alu_uart_interfaceUnit._191_/CLK
+  alu_uart_interfaceUnit._192_/CLK
+  alu_uart_interfaceUnit._193_/CLK
+  alu_uart_interfaceUnit._194_/CLK
+  alu_uart_interfaceUnit._195_/CLK
+  alu_uart_interfaceUnit._196_/CLK
+  alu_uart_interfaceUnit._197_/CLK
+  alu_uart_interfaceUnit._198_/CLK
+  alu_uart_interfaceUnit._199_/CLK
+  alu_uart_interfaceUnit._200_/CLK
+  alu_uart_interfaceUnit._201_/CLK
+  alu_uart_interfaceUnit._202_/CLK
+  alu_uart_interfaceUnit._203_/CLK
+  alu_uart_interfaceUnit._204_/CLK
+  alu_uart_interfaceUnit._205_/CLK
+  alu_uart_interfaceUnit._206_/CLK
+  alu_uart_interfaceUnit._207_/CLK
+  alu_uart_interfaceUnit._208_/CLK
+  alu_uart_interfaceUnit._209_/CLK
+  alu_uart_interfaceUnit._210_/CLK
+  alu_uart_interfaceUnit._211_/CLK
+  alu_uart_interfaceUnit._212_/CLK
+  alu_uart_interfaceUnit._213_/CLK
+  alu_uart_interfaceUnit._214_/CLK
+  alu_uart_interfaceUnit._215_/CLK
+  alu_uart_interfaceUnit._216_/CLK
+  alu_uart_interfaceUnit._217_/CLK
+  alu_uart_interfaceUnit._218_/CLK
+  alu_uart_interfaceUnit._219_/CLK
+  alu_uart_interfaceUnit._220_/CLK
+  alu_uart_interfaceUnit._221_/CLK
+  alu_uart_interfaceUnit._222_/CLK
+  alu_uart_interfaceUnit._223_/CLK
+  alu_uart_interfaceUnit._224_/CLK
+  alu_uart_interfaceUnit._225_/CLK
+  uartUnit.baud_rateUnit._61_/CLK
+  uartUnit.baud_rateUnit._62_/CLK
+  uartUnit.baud_rateUnit._63_/CLK
+  uartUnit.baud_rateUnit._64_/CLK
+  uartUnit.baud_rateUnit._65_/CLK
+  uartUnit.baud_rateUnit._66_/CLK
+  uartUnit.baud_rateUnit._67_/CLK
+  uartUnit.baud_rateUnit._68_/CLK
+  uartUnit.baud_rateUnit._69_/CLK
+  uartUnit.fifoRX._136_/CLK
+  uartUnit.fifoRX._137_/CLK
+  uartUnit.fifoRX._138_/CLK
+  uartUnit.fifoRX._139_/CLK
+  uartUnit.fifoRX._140_/CLK
+  uartUnit.fifoRX._141_/CLK
+  uartUnit.fifoRX._142_/CLK
+  uartUnit.fifoRX._143_/CLK
+  uartUnit.fifoRX._144_/CLK
+  uartUnit.fifoRX._145_/CLK
+  uartUnit.fifoRX._146_/CLK
+  uartUnit.fifoRX._147_/CLK
+  uartUnit.fifoRX._148_/CLK
+  uartUnit.fifoRX._149_/CLK
+  uartUnit.fifoRX._150_/CLK
+  uartUnit.fifoRX._151_/CLK
+  uartUnit.fifoRX._152_/CLK
+  uartUnit.fifoRX._153_/CLK
+  uartUnit.fifoRX._154_/CLK
+  uartUnit.fifoRX._155_/CLK
+  uartUnit.fifoRX._156_/CLK
+  uartUnit.fifoRX._157_/CLK
+  uartUnit.fifoRX._158_/CLK
+  uartUnit.fifoRX._159_/CLK
+  uartUnit.fifoRX._160_/CLK
+  uartUnit.fifoRX._161_/CLK
+  uartUnit.fifoRX._162_/CLK
+  uartUnit.fifoRX._163_/CLK
+  uartUnit.fifoRX._164_/CLK
+  uartUnit.fifoRX._165_/CLK
+  uartUnit.fifoRX._166_/CLK
+  uartUnit.fifoRX._167_/CLK
+  uartUnit.fifoRX._168_/CLK
+  uartUnit.fifoRX._169_/CLK
+  uartUnit.fifoRX._170_/CLK
+  uartUnit.fifoRX._171_/CLK
+  uartUnit.fifoRX._172_/CLK
+  uartUnit.fifoRX._173_/CLK
+  uartUnit.fifoRX._174_/CLK
+  uartUnit.fifoRX._175_/CLK
+  uartUnit.fifoTX._136_/CLK
+  uartUnit.fifoTX._137_/CLK
+  uartUnit.fifoTX._138_/CLK
+  uartUnit.fifoTX._139_/CLK
+  uartUnit.fifoTX._140_/CLK
+  uartUnit.fifoTX._141_/CLK
+  uartUnit.fifoTX._142_/CLK
+  uartUnit.fifoTX._143_/CLK
+  uartUnit.fifoTX._144_/CLK
+  uartUnit.fifoTX._145_/CLK
+  uartUnit.fifoTX._146_/CLK
+  uartUnit.fifoTX._147_/CLK
+  uartUnit.fifoTX._148_/CLK
+  uartUnit.fifoTX._149_/CLK
+  uartUnit.fifoTX._150_/CLK
+  uartUnit.fifoTX._151_/CLK
+  uartUnit.fifoTX._152_/CLK
+  uartUnit.fifoTX._153_/CLK
+  uartUnit.fifoTX._154_/CLK
+  uartUnit.fifoTX._155_/CLK
+  uartUnit.fifoTX._156_/CLK
+  uartUnit.fifoTX._157_/CLK
+  uartUnit.fifoTX._158_/CLK
+  uartUnit.fifoTX._159_/CLK
+  uartUnit.fifoTX._160_/CLK
+  uartUnit.fifoTX._161_/CLK
+  uartUnit.fifoTX._162_/CLK
+  uartUnit.fifoTX._163_/CLK
+  uartUnit.fifoTX._164_/CLK
+  uartUnit.fifoTX._165_/CLK
+  uartUnit.fifoTX._166_/CLK
+  uartUnit.fifoTX._167_/CLK
+  uartUnit.fifoTX._168_/CLK
+  uartUnit.fifoTX._169_/CLK
+  uartUnit.fifoTX._170_/CLK
+  uartUnit.fifoTX._171_/CLK
+  uartUnit.fifoTX._172_/CLK
+  uartUnit.fifoTX._173_/CLK
+  uartUnit.fifoTX._174_/CLK
+  uartUnit.fifoTX._175_/CLK
+  uartUnit.uartRxUnit._137_/CLK
+  uartUnit.uartRxUnit._138_/CLK
+  uartUnit.uartRxUnit._139_/CLK
+  uartUnit.uartRxUnit._140_/CLK
+  uartUnit.uartRxUnit._141_/CLK
+  uartUnit.uartRxUnit._142_/CLK
+  uartUnit.uartRxUnit._143_/CLK
+  uartUnit.uartRxUnit._144_/CLK
+  uartUnit.uartRxUnit._145_/CLK
+  uartUnit.uartRxUnit._146_/CLK
+  uartUnit.uartRxUnit._147_/CLK
+  uartUnit.uartRxUnit._148_/CLK
+  uartUnit.uartRxUnit._149_/CLK
+  uartUnit.uartRxUnit._150_/CLK
+  uartUnit.uartRxUnit._151_/CLK
+  uartUnit.uartRxUnit._152_/CLK
+  uartUnit.uartRxUnit._153_/CLK
+  uartUnit.uartRxUnit._154_/CLK
+  uartUnit.uartRxUnit._155_/CLK
+  uartUnit.uartTxUnit._155_/CLK
+  uartUnit.uartTxUnit._156_/CLK
+  uartUnit.uartTxUnit._157_/CLK
+  uartUnit.uartTxUnit._158_/CLK
+  uartUnit.uartTxUnit._159_/CLK
+  uartUnit.uartTxUnit._160_/CLK
+  uartUnit.uartTxUnit._161_/CLK
+  uartUnit.uartTxUnit._162_/CLK
+  uartUnit.uartTxUnit._163_/CLK
+  uartUnit.uartTxUnit._164_/CLK
+  uartUnit.uartTxUnit._165_/CLK
+  uartUnit.uartTxUnit._166_/CLK
+  uartUnit.uartTxUnit._167_/CLK
+  uartUnit.uartTxUnit._168_/CLK
+  uartUnit.uartTxUnit._169_/CLK
+  uartUnit.uartTxUnit._170_/CLK
+  uartUnit.uartTxUnit._171_/CLK
+  uartUnit.uartTxUnit._172_/CLK
+  uartUnit.uartTxUnit._173_/CLK
+  uartUnit.uartTxUnit._174_/CLK
+Warning: There are 167 unconstrained endpoints.
+  o_uartTx
+  alu_uart_interfaceUnit._188_/D
+  alu_uart_interfaceUnit._189_/D
+  alu_uart_interfaceUnit._190_/D
+  alu_uart_interfaceUnit._191_/D
+  alu_uart_interfaceUnit._192_/D
+  alu_uart_interfaceUnit._193_/D
+  alu_uart_interfaceUnit._194_/D
+  alu_uart_interfaceUnit._195_/D
+  alu_uart_interfaceUnit._196_/D
+  alu_uart_interfaceUnit._197_/D
+  alu_uart_interfaceUnit._198_/D
+  alu_uart_interfaceUnit._199_/D
+  alu_uart_interfaceUnit._200_/D
+  alu_uart_interfaceUnit._201_/D
+  alu_uart_interfaceUnit._202_/D
+  alu_uart_interfaceUnit._203_/D
+  alu_uart_interfaceUnit._204_/D
+  alu_uart_interfaceUnit._205_/D
+  alu_uart_interfaceUnit._206_/D
+  alu_uart_interfaceUnit._207_/D
+  alu_uart_interfaceUnit._208_/D
+  alu_uart_interfaceUnit._209_/D
+  alu_uart_interfaceUnit._210_/D
+  alu_uart_interfaceUnit._211_/D
+  alu_uart_interfaceUnit._212_/D
+  alu_uart_interfaceUnit._213_/D
+  alu_uart_interfaceUnit._214_/D
+  alu_uart_interfaceUnit._215_/D
+  alu_uart_interfaceUnit._216_/D
+  alu_uart_interfaceUnit._217_/D
+  alu_uart_interfaceUnit._218_/D
+  alu_uart_interfaceUnit._219_/D
+  alu_uart_interfaceUnit._220_/D
+  alu_uart_interfaceUnit._221_/D
+  alu_uart_interfaceUnit._222_/D
+  alu_uart_interfaceUnit._223_/D
+  alu_uart_interfaceUnit._224_/D
+  alu_uart_interfaceUnit._225_/D
+  uartUnit.baud_rateUnit._61_/D
+  uartUnit.baud_rateUnit._62_/D
+  uartUnit.baud_rateUnit._63_/D
+  uartUnit.baud_rateUnit._64_/D
+  uartUnit.baud_rateUnit._65_/D
+  uartUnit.baud_rateUnit._66_/D
+  uartUnit.baud_rateUnit._67_/D
+  uartUnit.baud_rateUnit._68_/D
+  uartUnit.baud_rateUnit._69_/D
+  uartUnit.fifoRX._136_/D
+  uartUnit.fifoRX._137_/D
+  uartUnit.fifoRX._138_/D
+  uartUnit.fifoRX._139_/D
+  uartUnit.fifoRX._140_/D
+  uartUnit.fifoRX._141_/D
+  uartUnit.fifoRX._142_/D
+  uartUnit.fifoRX._143_/D
+  uartUnit.fifoRX._144_/D
+  uartUnit.fifoRX._145_/D
+  uartUnit.fifoRX._146_/D
+  uartUnit.fifoRX._147_/D
+  uartUnit.fifoRX._148_/D
+  uartUnit.fifoRX._149_/D
+  uartUnit.fifoRX._150_/D
+  uartUnit.fifoRX._151_/D
+  uartUnit.fifoRX._152_/D
+  uartUnit.fifoRX._153_/D
+  uartUnit.fifoRX._154_/D
+  uartUnit.fifoRX._155_/D
+  uartUnit.fifoRX._156_/D
+  uartUnit.fifoRX._157_/D
+  uartUnit.fifoRX._158_/D
+  uartUnit.fifoRX._159_/D
+  uartUnit.fifoRX._160_/D
+  uartUnit.fifoRX._161_/D
+  uartUnit.fifoRX._162_/D
+  uartUnit.fifoRX._163_/D
+  uartUnit.fifoRX._164_/D
+  uartUnit.fifoRX._165_/D
+  uartUnit.fifoRX._166_/D
+  uartUnit.fifoRX._167_/D
+  uartUnit.fifoRX._168_/D
+  uartUnit.fifoRX._169_/D
+  uartUnit.fifoRX._170_/D
+  uartUnit.fifoRX._171_/D
+  uartUnit.fifoRX._172_/D
+  uartUnit.fifoRX._173_/D
+  uartUnit.fifoRX._174_/D
+  uartUnit.fifoRX._175_/D
+  uartUnit.fifoTX._136_/D
+  uartUnit.fifoTX._137_/D
+  uartUnit.fifoTX._138_/D
+  uartUnit.fifoTX._139_/D
+  uartUnit.fifoTX._140_/D
+  uartUnit.fifoTX._141_/D
+  uartUnit.fifoTX._142_/D
+  uartUnit.fifoTX._143_/D
+  uartUnit.fifoTX._144_/D
+  uartUnit.fifoTX._145_/D
+  uartUnit.fifoTX._146_/D
+  uartUnit.fifoTX._147_/D
+  uartUnit.fifoTX._148_/D
+  uartUnit.fifoTX._149_/D
+  uartUnit.fifoTX._150_/D
+  uartUnit.fifoTX._151_/D
+  uartUnit.fifoTX._152_/D
+  uartUnit.fifoTX._153_/D
+  uartUnit.fifoTX._154_/D
+  uartUnit.fifoTX._155_/D
+  uartUnit.fifoTX._156_/D
+  uartUnit.fifoTX._157_/D
+  uartUnit.fifoTX._158_/D
+  uartUnit.fifoTX._159_/D
+  uartUnit.fifoTX._160_/D
+  uartUnit.fifoTX._161_/D
+  uartUnit.fifoTX._162_/D
+  uartUnit.fifoTX._163_/D
+  uartUnit.fifoTX._164_/D
+  uartUnit.fifoTX._165_/D
+  uartUnit.fifoTX._166_/D
+  uartUnit.fifoTX._167_/D
+  uartUnit.fifoTX._168_/D
+  uartUnit.fifoTX._169_/D
+  uartUnit.fifoTX._170_/D
+  uartUnit.fifoTX._171_/D
+  uartUnit.fifoTX._172_/D
+  uartUnit.fifoTX._173_/D
+  uartUnit.fifoTX._174_/D
+  uartUnit.fifoTX._175_/D
+  uartUnit.uartRxUnit._137_/D
+  uartUnit.uartRxUnit._138_/D
+  uartUnit.uartRxUnit._139_/D
+  uartUnit.uartRxUnit._140_/D
+  uartUnit.uartRxUnit._141_/D
+  uartUnit.uartRxUnit._142_/D
+  uartUnit.uartRxUnit._143_/D
+  uartUnit.uartRxUnit._144_/D
+  uartUnit.uartRxUnit._145_/D
+  uartUnit.uartRxUnit._146_/D
+  uartUnit.uartRxUnit._147_/D
+  uartUnit.uartRxUnit._148_/D
+  uartUnit.uartRxUnit._149_/D
+  uartUnit.uartRxUnit._150_/D
+  uartUnit.uartRxUnit._151_/D
+  uartUnit.uartRxUnit._152_/D
+  uartUnit.uartRxUnit._153_/D
+  uartUnit.uartRxUnit._154_/D
+  uartUnit.uartRxUnit._155_/D
+  uartUnit.uartTxUnit._155_/D
+  uartUnit.uartTxUnit._156_/D
+  uartUnit.uartTxUnit._157_/D
+  uartUnit.uartTxUnit._158_/D
+  uartUnit.uartTxUnit._159_/D
+  uartUnit.uartTxUnit._160_/D
+  uartUnit.uartTxUnit._161_/D
+  uartUnit.uartTxUnit._162_/D
+  uartUnit.uartTxUnit._163_/D
+  uartUnit.uartTxUnit._164_/D
+  uartUnit.uartTxUnit._165_/D
+  uartUnit.uartTxUnit._166_/D
+  uartUnit.uartTxUnit._167_/D
+  uartUnit.uartTxUnit._168_/D
+  uartUnit.uartTxUnit._169_/D
+  uartUnit.uartTxUnit._170_/D
+  uartUnit.uartTxUnit._171_/D
+  uartUnit.uartTxUnit._172_/D
+  uartUnit.uartTxUnit._173_/D
+  uartUnit.uartTxUnit._174_/D
